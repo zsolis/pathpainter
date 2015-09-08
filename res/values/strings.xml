@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PathPainter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="back">返回</string>
+    <string name="exit">退出</string>
+    <string name="reset">重置</string>
+    <string name="start">开始</string>
+    <string name="set_path">设定飞行路线</string>
+    <string name="paint_path">实际飞行轨迹</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            
+    <TextView 
+    		android:id="@+id/set_text"
+    		android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:text="@string/set_path"
+        	android:textSize="32sp" 
+        	android:textColor="#ff0060"
+        	android:gravity="center_horizontal"/> 
+         
+    </LinearLayout>
+      
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="10dp">
+
+    <com.sun.pathpainter.PathSetView
+        android:id="@+id/set_view"
+        android:layout_width="340dp"
+        android:layout_height="480dp"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+       
+    </FrameLayout>   
+   
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+        <Button
+			android:id="@+id/set_reset_btn"
+			android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textSize="20sp" />
+	
+        <Button 
+			android:id="@+id/set_start_btn"
+			android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/start"
+            android:textSize="20sp" />
+     </LinearLayout>
+</LinearLayout>
