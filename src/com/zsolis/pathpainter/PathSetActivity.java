@@ -17,7 +17,7 @@ public class PathSetActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle s) {
 		super.onCreate(s);
-		//È«ÆÁÏÔÊ¾
+		//å…¨å±æ˜¾ç¤º
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);

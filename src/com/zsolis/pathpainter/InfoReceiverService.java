@@ -37,7 +37,7 @@ public class InfoReceiverService extends Service {
 								+ String.valueOf(node.getxOffset()) +" "
 								+ String.valueOf(node.getyOffset()) );
 						
-						//���͹㲥
+						//发送广播
 						Intent intent=new Intent();
 						intent.putExtra("com.zsolis.pathpainter.position", new int [] {node.getxOffset(), node.getyOffset()});
 						//intent.putExtra("com.zsolis.pathpainter.position", node);

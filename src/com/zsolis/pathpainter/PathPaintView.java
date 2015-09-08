@@ -66,8 +66,8 @@ public class PathPaintView extends SurfaceView implements SurfaceHolder.Callback
 		while(isRunning) {
 			try {
 	            synchronized (holder) {
-	                canvas = holder.lockCanvas();//Ëø¶¨»­²¼£¬Ò»°ãÔÚËø¶¨ºó¾Í¿ÉÒÔÍ¨¹ıÆä·µ»ØµÄ»­²¼¶ÔÏóCanvas£¬ÔÚÆäÉÏÃæ»­Í¼µÈ²Ù×÷ÁË¡£
-	                canvas.drawColor(Color.LTGRAY);//ÉèÖÃ»­²¼±³¾°ÑÕÉ«
+	                canvas = holder.lockCanvas();//é”å®šç”»å¸ƒï¼Œä¸€èˆ¬åœ¨é”å®šåå°±å¯ä»¥é€šè¿‡å…¶è¿”å›çš„ç”»å¸ƒå¯¹è±¡Canvasï¼Œåœ¨å…¶ä¸Šé¢ç”»å›¾ç­‰æ“ä½œäº†ã€‚
+	                canvas.drawColor(Color.LTGRAY);//è®¾ç½®ç”»å¸ƒèƒŒæ™¯é¢œè‰²
 	                if (path == null || path.size() == 0) {
 						continue;
 					}
@@ -89,7 +89,7 @@ public class PathPaintView extends SurfaceView implements SurfaceHolder.Callback
 	        }
 	        finally {
 	            if(canvas!= null) {
-	                holder.unlockCanvasAndPost(canvas);//½áÊøËø¶¨»­Í¼£¬²¢Ìá½»¸Ä±ä¡£
+	                holder.unlockCanvasAndPost(canvas);//ç»“æŸé”å®šç”»å›¾ï¼Œå¹¶æäº¤æ”¹å˜ã€‚
 	            }
 	        }
 		}

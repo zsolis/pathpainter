@@ -33,7 +33,7 @@ public class InfoReceiver {
 		for(int i=0;i<path.size();i++)
 		{
 			Position node=  path.get(i);
-			System.out.printf("µÚ%d¸öµãµÄºá×ø±êÊÇ%d×Ý×ø±êÊÇ%d\n",i,node.getxOffset(),node.getyOffset());
+			System.out.printf("ç¬¬%dä¸ªç‚¹çš„æ¨ªåæ ‡æ˜¯%dçºµåæ ‡æ˜¯%d\n",i,node.getxOffset(),node.getyOffset());
 		}
 	}*/
 }

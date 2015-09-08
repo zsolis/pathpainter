@@ -23,8 +23,8 @@ public class PathPaintActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//ÒşÈ¥±êÌâ£¨Ó¦ÓÃµÄÃû×Ö)  
-        //´ËÉè¶¨±ØĞëÒªĞ´ÔÚsetContentViewÖ®Ç°£¬·ñÔò»áÓĞÒì³££©  
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//éšå»æ ‡é¢˜ï¼ˆåº”ç”¨çš„åå­—)  
+        //æ­¤è®¾å®šå¿…é¡»è¦å†™åœ¨setContentViewä¹‹å‰ï¼Œå¦åˆ™ä¼šæœ‰å¼‚å¸¸ï¼‰  
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_path_paint);
@@ -41,7 +41,7 @@ public class PathPaintActivity extends Activity implements OnClickListener {
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		//×¢²á¹ã²¥½ÓÊÕÆ÷
+		//æ³¨å†Œå¹¿æ’­æ¥æ”¶å™¨
 		receiver=new PositionReceiver();
 		IntentFilter filter=new IntentFilter();
 		filter.addAction("com.zsolis.pathpainter.InfoReceiverService");

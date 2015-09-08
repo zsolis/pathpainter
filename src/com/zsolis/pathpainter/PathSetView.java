@@ -76,7 +76,7 @@ public class PathSetView extends SurfaceView implements SurfaceHolder.Callback,R
 			case MotionEvent.ACTION_UP:	
 				break;
 		}
-		//¼ÇÂ¼µ±Ç°´¥ÃşµãµÃµ±Ç°µÃ×ø±ê
+		//è®°å½•å½“å‰è§¦æ‘¸ç‚¹å¾—å½“å‰å¾—åæ ‡
 		mPosX = x;
 		mPosY = y;
 		return true;
@@ -97,10 +97,10 @@ public class PathSetView extends SurfaceView implements SurfaceHolder.Callback,R
 					mPreX = mPosX;
 					mPreY = mPosY;
 				}
-				//»æÖÆÇúÏß
+				//ç»˜åˆ¶æ›²çº¿
 				mCanvas.drawPath(mPath, mPaint);
-				mCanvas.drawText("µ±Ç°´¥±ÊX:"+mPosX, 0, 20, mTextPaint);
-				mCanvas.drawText("µ±Ç°´¥±ÊY:"+mPosY,0,40,mTextPaint);
+				mCanvas.drawText("å½“å‰è§¦ç¬”X:"+mPosX, 0, 20, mTextPaint);
+				mCanvas.drawText("å½“å‰è§¦ç¬”Y:"+mPosY,0,40,mTextPaint);
 				mSurfaceHolder.unlockCanvasAndPost(mCanvas);
 			}
 			long endTime = System.currentTimeMillis();
